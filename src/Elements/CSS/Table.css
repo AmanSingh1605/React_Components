@@ -1,0 +1,8 @@
+.tableHeader:hover .sortIcons{
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.tableHeader{
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+
+  overflow-x: hidden;
+}
+.HAMBURGER.active .BAR:nth-child(2) {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.HAMBURGER.active .BAR:nth-child(1) {
+  transform: translateY(8px) rotate(225deg);
+  transition: 0.5s ease-in-out;
+}
+
+.HAMBURGER.active .BAR:nth-child(3) {
+  transform: translateY(-8px) rotate(-225deg);
+  transition: 0.5s ease-in-out;
+}
+.nav-bar {
+  display: grid;
+  position: absolute;
+  left: -100%;
+  transition: 0.3s;
+  z-index: 19;
+}
+.nav-bar.active {
+  display: grid !important;
+  left: 0;
+}
+
+label{
+    margin:0 10px 0 4px;
+}
