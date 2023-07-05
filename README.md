@@ -4,7 +4,7 @@ Welcome to the React Component App! This application is a collection of customiz
 
 It is still in developing stage, so many components are still in designing stage. Soon everything will be available. Source code is public. everyone is welcome to provide ideas and changes. 
 
-##Features  
+## Features  
 
 Easy integration of customizable React components into your projects  
 Different types of components, including tables, accordions, buttons, and more  
