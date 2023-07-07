@@ -1,6 +1,10 @@
+import {PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
 import Accordion1 from '../Elements/Accordion/Accordion1';
 import Accordion2 from '../Elements/Accordion/Accordion2';
 import Accordion3 from '../Elements/Accordion/Accordion3';
+
 
 
 const AccordianPage = () => {
@@ -283,7 +287,7 @@ const AccordianPage = () => {
     return (
       <div className="shadow-[0_3px_8px_rgb(0,0,0,0.24)] hover:shadow-xl transition-shadow border-1 p-2 my-4" key={accordion.id}>
         {accordion.element}
-        <button onClick={handleCopy} className='font-bold border-2 text-green-700 border-green-700 rounded p-2 m-2 active:shadow-xl'>Copy Element</button>
+        <button onClick={handleCopy} className='font-bold border-2 text-green-700 border-green-700 rounded p-2 m-2 active:shadow-xl hover:bg-green-700 hover:text-white'>Copy Element</button>
       </div>
     );
   })
@@ -304,7 +308,7 @@ const AccordianPage = () => {
             </ul>
             <div>
               <heading>Example: </heading>
-              <div className="bg-[#011627] text-[#d6deeb] p-4 my-4 rounded-lg font-['Fira_Code'] whitespace-pre">{`
+              <SyntaxHighlighter language='jsx' style={atomDark}>{`
 import Accordion from './Elements';
 const temp = [
   {id : "0",
@@ -320,7 +324,7 @@ return(
     <Accordion1 items={temp} />
   );`}
 
-              </div>
+  </SyntaxHighlighter>
             </div>
           </div>
         </p>
